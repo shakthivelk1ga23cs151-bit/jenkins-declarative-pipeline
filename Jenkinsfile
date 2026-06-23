@@ -1,25 +1,24 @@
 pipeline {
-    agent any
-    
+    agent {
+        label 'shakthiAgent'
+    }
+
     stages {
         stage('Build') {
             steps {
-                // Run build commands
-                sh 'echo "Building project..."'
+                bat 'echo Building project...'
             }
         }
-        
+
         stage('Test') {
             steps {
-                // Run tests
-                sh 'echo "Running tests..."'
+                bat 'echo Running tests...'
             }
         }
-        
+
         stage('Deploy') {
             steps {
-                // Deploy step (dummy for now)
-                sh 'echo "Deploying application..."'
+                bat 'echo Deploying application...'
             }
         }
     }
