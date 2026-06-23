@@ -4,21 +4,21 @@ pipeline {
     }
 
     stages {
-        stage('Build') {
+        stage('Shakthi') {
             steps {
-                bat 'echo Building project...'
+                bat 'echo shakthi...'
             }
         }
 
-        stage('Test') {
+        stage('Vel') {
             steps {
-                bat 'echo Running tests...'
+                bat 'echo Vel...'
             }
         }
 
-        stage('Deploy') {
+        stage('K') {
             steps {
-                bat 'echo Deploying application...'
+                bat 'echo K...'
             }
         }
     }
