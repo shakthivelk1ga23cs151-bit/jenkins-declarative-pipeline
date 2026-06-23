@@ -6,19 +6,19 @@ pipeline {
     stages {
         stage('Shakthi') {
             steps {
-                bat 'echo shakthi...'
+                sh 'echo shakthi...'
             }
         }
 
         stage('Vel') {
             steps {
-                bat 'echo Vel...'
+                sh 'echo Vel...'
             }
         }
 
         stage('K') {
             steps {
-                bat 'echo K...'
+                sh 'echo K...'
             }
         }
     }
